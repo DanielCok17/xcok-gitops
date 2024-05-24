@@ -5,6 +5,10 @@ resources:
 - namespace.yaml                            # namespace je tiež objektom pre tento klaster
 - ../../../infrastructure/ufe-controller       # kustomization pre ufe-controller
 - ../../../infrastructure/fluxcd
+- ../../../components/version-developers
 
 patches:
 - path: patches/ufe-controller.service.yaml    # úprava služby ufe-controller
+
+components:
+- ../../../components/version-developers
